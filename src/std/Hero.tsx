@@ -50,18 +50,21 @@ export function Hero({ ready }: { ready: boolean }) {
         <motion.h2 className="script hero-name" {...up(ready, 2.3)}>
           Amira Badawy
         </motion.h2>
+
+        <motion.a
+          href="#reveal"
+          className="scroll-cue"
+          initial={still ? false : { opacity: 0, y: 16 }}
+          animate={ready ? { opacity: 1, y: 0 } : undefined}
+          transition={{ delay: 2.8, duration: 1 }}
+        >
+          <span className="scroll-cue-pill caps">Reveal the date</span>
+          <svg className="scroll-cue-arrow" viewBox="0 0 24 24" aria-hidden>
+            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </motion.a>
       </div>
 
-      <motion.a
-        href="#reveal"
-        className="scroll-cue"
-        initial={still ? false : { opacity: 0 }}
-        animate={ready ? { opacity: 1 } : undefined}
-        transition={{ delay: 3, duration: 1 }}
-      >
-        <span className="caps">Reveal the date</span>
-        <span className="scroll-cue-line" />
-      </motion.a>
     </section>
   );
 }
