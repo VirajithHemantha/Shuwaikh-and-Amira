@@ -39,7 +39,7 @@ export function Intro({ onOpen }: { onOpen: () => void }) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 1 }}
         >
-          You have a special message
+          You have a message
         </motion.p>
 
         <motion.div
