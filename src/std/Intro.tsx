@@ -50,11 +50,8 @@ export function Intro({ onOpen }: { onOpen: () => void }) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.94 }}
         >
-          <span className="seal-ring" />
           <span className="seal-pulse" />
-          <span className="seal-mono">
-            S<em>&amp;</em><span className="cap-a">A</span>
-          </span>
+          <img className="seal-img" src="/sa_seal.png" alt="S & A wax seal" draggable={false} />
         </motion.div>
 
         <motion.p

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Great+Vibes&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Great+Vibes&display=swap');
 @import "tailwindcss";
 
 /* Palette taken from the watercolor card */
@@ -125,55 +125,28 @@ button { font: inherit; color: inherit; }
 
 .seal {
   position: relative;
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   display: grid;
   place-items: center;
-  background:
-    radial-gradient(circle at 35% 30%, #2c6a50 0%, var(--emerald) 55%, #0b2a1e 100%);
-  box-shadow:
-    0 18px 40px -10px rgba(18, 60, 44, 0.55),
-    inset 0 2px 6px rgba(255, 255, 255, 0.15),
-    inset 0 -6px 14px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
-.seal-ring {
-  position: absolute;
-  inset: 9px;
-  border-radius: 50%;
-  border: 1.5px solid var(--gold-light);
-  opacity: 0.85;
-}
-.seal-ring::after {
-  content: '';
-  position: absolute;
-  inset: 4px;
-  border-radius: 50%;
-  border: 0.5px dashed rgba(232, 214, 174, 0.55);
+.seal-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+  filter: drop-shadow(0 16px 22px rgba(18, 60, 44, 0.45));
 }
 .seal-pulse {
   position: absolute;
-  inset: -2px;
+  inset: 6px;
   border-radius: 50%;
   border: 1px solid var(--gold);
   animation: pulse 2.4s ease-out infinite;
 }
-.seal-mono {
-  position: relative;
-  font-family: var(--script);
-  font-size: 46px;
-  line-height: 1;
-  color: var(--gold-light);
-  text-shadow: 0 1px 0 rgba(0,0,0,.3);
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 2px;
-  width: 100%;
-  padding-right: 4px;
-}
-.seal-mono em { font-style: normal; font-size: 28px; color: var(--gold); }
-.seal-mono .cap-a { font-size: 40px; }
 
 @keyframes pulse {
   0%   { transform: scale(1);   opacity: .8; }
@@ -272,8 +245,6 @@ button { font: inherit; color: inherit; }
   white-space: nowrap;
   max-width: 100%;
 }
-/* Great Vibes' capital A reads as a lowercase "a" — use a clearer copperplate A */
-.cap-a { font-family: "Pinyon Script", var(--script); font-size: 0.92em; }
 
 .scroll-cue {
   margin-top: 36px;
