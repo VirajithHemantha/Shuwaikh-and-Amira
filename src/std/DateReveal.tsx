@@ -28,9 +28,7 @@ export function DateReveal() {
         transition={{ duration: 1 }}
       >
         <p className="caps reveal-kicker">Our special day is</p>
-        <h3 className="script reveal-title">
-          {allRevealed ? 'See you there' : 'Tap to reveal'}
-        </h3>
+        {!allRevealed && <h3 className="script reveal-title">Tap to reveal</h3>}
       </motion.div>
 
       <div className="discs">
@@ -81,6 +79,8 @@ export function DateReveal() {
 
             <Calendar />
             <Countdown />
+
+            <h3 className="script reveal-title reveal-outro">See you there</h3>
           </motion.div>
         )}
       </AnimatePresence>

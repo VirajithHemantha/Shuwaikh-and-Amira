@@ -12,7 +12,7 @@ export function Closing() {
   return (
     <footer className="closing">
       <motion.p className="script closing-names" {...rise(0)}>
-        Shuwaikh &amp; Amira
+        Shuwaikh &amp; <span className="cap-a">A</span>mira
       </motion.p>
       <motion.p className="caps closing-date" {...rise(0.2)}>
         27 · 12 · 2026

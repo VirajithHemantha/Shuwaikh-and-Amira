@@ -53,7 +53,7 @@ export function Intro({ onOpen }: { onOpen: () => void }) {
           <span className="seal-ring" />
           <span className="seal-pulse" />
           <span className="seal-mono">
-            S<em>&amp;</em>A
+            S<em>&amp;</em><span className="cap-a">A</span>
           </span>
         </motion.div>
 

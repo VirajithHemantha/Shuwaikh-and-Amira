@@ -48,7 +48,7 @@ export function Hero({ ready }: { ready: boolean }) {
           <Ampersand />
         </motion.div>
         <motion.h2 className="script hero-name" {...up(ready, 2.3)}>
-          Amira Badawy
+          <span className="cap-a">A</span>mira Badawy
         </motion.h2>
 
         <motion.a
