@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Great+Vibes&family=Pinyon+Script&display=swap');
 @import "tailwindcss";
 
 /* Palette taken from the watercolor card */
@@ -13,7 +13,7 @@
   --paper: #fbfbf6;          /* card paper */
   --paper-warm: #f6f4ec;
 
-  --script: "Great Vibes", cursive;
+  --script: "Pinyon Script", "Great Vibes", cursive;
   --serif: "Cormorant Garamond", Georgia, serif;
 }
 
